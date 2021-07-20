@@ -1,7 +1,10 @@
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.*;
 
-import org.w3c.dom.NameList;
+class Hero {
+  private String name;
+  public Hero(String name) { this.name = name; }
+  public String getName() { return this.name; }
+}
 
 public class Lesson3 {
   public static void main(String[] args) {
@@ -37,5 +40,32 @@ public class Lesson3 {
       String name = it.next();
       System.out.println(name);
     }
+
+    Map<Integer, String> items = new HashMap<>();
+    items.put(1, "りんご");
+    items.put(2, "みかん");
+    System.out.println(items.get(2));
+
+    Hero hero1 = new Hero("斉藤");
+    Hero hero2 = new Hero("鈴木");
+    List<String> heroes = new ArrayList<>();
+    heroes.add(hero1.getName());
+    heroes.add(hero2.getName());
+
+    for(String name : heroes) {
+      System.out.println(name);
+    }
+
+    Map<String, Integer> attack_counts = new HashMap<>();
+    attack_counts.put(hero1.getName(), 3);
+    attack_counts.put(hero2.getName(), 7);
+
+    for(String key : attack_counts.keySet()) {
+      int value = attack_counts.get(key);
+      System.out.println(key + "が倒した敵=" + value);
+    }
+
+    // List<Hero> heroes = new ArrayList<>();
+    // 上記のように<インスタンスの型>を入れることもできる
   }
 }
