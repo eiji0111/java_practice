@@ -14,6 +14,11 @@ public class Main {
     // 文字列sをカンマで区切って文字配列aを作成
     String[] a = s.split("[,]");
     System.out.println(Arrays.toString(a));
+
+    Bank ba = new Bank("Bank");
+    Bank b = new Bank("Bank");
+    System.out.println(b.name);
+    System.out.println(ba.name.equals(b.name));
   }
   String concatPath(String folder, String file) {
     if(!folder.endsWith("¥¥")) {

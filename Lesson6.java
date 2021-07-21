@@ -1,5 +1,3 @@
-import java.util.*;
-
 interface Func1 {
   // xが奇数かどうか判定する
   // interface の public abstract は省略できる
