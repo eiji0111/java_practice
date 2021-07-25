@@ -15,6 +15,12 @@ class Employee implements Serializable {
     this.name = name;
     this.age = age;
   }
+  public String getName() {
+    return this.name;
+  }
+  public int getAge() {
+    return this.age;
+  }
 }
 
 class Depertment implements Serializable {
@@ -27,6 +33,9 @@ class Depertment implements Serializable {
   }
   public String getName() {
     return this.name;
+  }
+  public Employee getLeader() {
+    return this.leader;
   }
 }
 
