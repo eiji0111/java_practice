@@ -4,7 +4,6 @@ package Lesson13;
  * 銀行クラス。
  * このクラスは、１つの銀行を表します。
  * @author 森
- * @see Owner
  * @since ver1.0.0
  */
 public class Bank {
