@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch AccountTest",
+      "request": "launch",
+      "mainClass": "Lesson14.AccountTest",
+      "projectName": "JavaPractice_58b1d0cd"
+    },
+    {
       "type": "pwa-chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
