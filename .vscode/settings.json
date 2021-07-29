@@ -4,5 +4,6 @@
     "commons-lang3-3.12.0.jar",
     "h2-1.4.200.jar"
   ],
-  "java.help.firstView": "none"
+  "java.help.firstView": "none",
+  "java.project.sourcePaths": []
 }
